@@ -1,42 +1,73 @@
-/*Estilo pagina Index*/
+/*Estilos da Pagina index.html*/
+.center {
+  text-align: center;
+}
 
-/*Menu*/
+.justify {
+  /*Justificando o texo da pagina*/
+  text-align: justify;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+  align-items: center;
+}
+
 #menu li {
-    /*coloca os botoes do menu na horizontal e com espaçamento*/
-    display: inline;
-    padding: 15px;
-    text-decoration: none;
-  }
-  #menu li a {
-    /*Tira o sublinhado e a cor de clicado do botão*/
-    text-decoration: none;
-    color: black;
-  }
-  #menu li a:hover {
-    /*Muda a cor do botao qando o mouse passsa por ele*/
-    color: grey;
-  }
+  /*coloca os botoes do menu na horizontal e com espaçamento*/
+  display: inline;
+  padding: 15px;
+  text-decoration: none;
+}
 
-  /*Corpo da pagina*/
-  .container {
-    display: flex;
-    flex-wrap: row;
-    justify-content: center;
-    align-items: center;
-  }
+#menu li a {
+  /*Tira o sublinhado e a cor de clicado do botão*/
+  text-decoration: none;
+  color: black;
+}
 
-  .p-30 {
-    /*Muda o espaçamento da div principal*/
-    padding: 30px;
-  }
-  .br-50 {
-    /*arredondamento da borda da foto*/
-    border-radius: 50%;
-  }
-  .wh-300 {
-    /*arredondamento da altura da foto*/
-    width: 300px;
-    height: 300px;
-  }
+#menu li a:hover {
+  /*Muda a cor do botao qando o mouse passsa por ele*/
+  color: grey;
+}
 
-  /*Estilo pagina Contato*/
+.p-30 {
+  /*Muda o espaçamento da div principal*/
+  padding: 30px;
+}
+
+.br-50 {
+  /*arredondamento da borda da foto*/
+  border-radius: 50%;
+}
+
+.wh-300 {
+  /*arredondamento da altura da foto*/
+  width: 300px;
+  height: 300px;
+}
+
+.tm-social {
+  /*Tamanho das imagens no footer*/
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.mb-50 {
+  /*Margem inferior do link do video*/
+  margin-bottom: 50px;
+}
+.coluna1{
+  width: 18%;
+}
+
+/*Estilos da pagina contato.htnl*/
+
+.ml-50{
+  /*Margem esquerda do endereço*/
+  padding-left: 50px;
+}

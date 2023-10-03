@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--Menu no topo da pagina-->
+    <ul id="menu">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+    <h1 class="center">Entre em contato</h1>
+
+    <div class="container mb-50">
+        <div>
+            <form>
+                <label for="nome">Nome: </label><br>
+                <input type="text" id="nome" onkeyup="validaNome()"><!--Onkeyup se dá quando precssionamos e soltamos uma tecla-->
+                <div id="txtNome"> </div>
+                <br>
+
+                <label for="email">E-mail: </label><br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <br>
+
+                <label for="assunto">Assunto: </label><br>
+                <textarea name="assunto" id="assunto" cols="40" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+        <div class="ml-50">
+            <p>José Demar Peres, 475</p>
+            <p>Praia Grande - SP</p>
+            <iframe id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.714081791234!2d-46.5127033!3d-24.041145699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1f81a1e93fa1%3A0xb030990721538cc4!2sR.%20Jos%C3%A9%20Demar%20P%C3%A9res%2C%20475%20-%20Maracan%C3%A3%2C%20Praia%20Grande%20-%20SP%2C%2011705-630!5e0!3m2!1spt-BR!2sbr!4v1695946272714!5m2!1spt-BR!2sbr"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" >
+            </iframe>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="container ">
+            <a href="https://github.com/danielbgo" target="_blank">
+                <img class="tm-social " src="assets/img/github.png" alt="Logo do GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/danielb-gomes/" target="_blank">
+                <img class="tm-social " src="assets/img/linkedin.png" alt="Logo do LinkedIn">
+            </a>
+            <a href="https://wa.me/5513988674223" target="_blank">
+                <img class="tm-social " src="assets/img/whatsapp.png" alt="Logo do WhatsApp">
+            </a>
+            <a href="https://instagram.com/daniel.b.gomes" target="_blank">
+                <img class="tm-social " src="assets/img/instagram.png" alt="Logo do Instagram">
+            </a>
+        </div>
+        <p class="center">
+            Todos os Direitos Reservados para: Daniel Beserra Gomes &COPY;
+        </p>
+    </footer>
+
+    <!--Adicionando o Javascript no corpo da pagina-->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
